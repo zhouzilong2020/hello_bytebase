@@ -6,8 +6,10 @@ RUN mkdir -p /var/opt/bytebase
 
 ARG RENDER_EXTERNAL_URL="unknown"
 
+ENV RENDER_EXTERNAL_URL=$RENDER_EXTERNAL_URL
+
 COPY . /usr/local/bin/
 
-CMD ["/usr/local/bin/start.sh", "$RENDER_EXTERNAL_URL"]
+CMD ["/usr/local/bin/start.sh"]
 
 ENTRYPOINT ["sh"]

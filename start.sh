@@ -1,3 +1,1 @@
-HOST=`echo $1 | awk -F ':' '{ print $1 }'`
-
-bytebase --host ${HOST} --port 8000 --data /var/opt/bytebase
+bytebase --host ${RENDER_EXTERNAL_URL} --port 8000 --data /var/opt/bytebase
