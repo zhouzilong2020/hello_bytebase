@@ -1,4 +1,4 @@
-# The official Elasticsearch Docker image
+# The official Bytebase Docker image
 FROM bytebase/bytebase:1.0.2
 
 # Directory to store the data, which can be referenced as the mounting point.
