@@ -1,6 +1,10 @@
 services:
-- type: web
-  name: hello-bytebase
-  env: docker
-  plan: free
-  dockerfilePath: ./Dockerfile
+  - type: web
+    name: hello-bytebase
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    disk:
+      name: data
+      mountPath: /var/opt
+      sizeGB: 1 # optional
